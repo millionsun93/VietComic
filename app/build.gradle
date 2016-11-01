@@ -6,9 +6,9 @@ android {
     signingConfigs {
         release {
             keyAlias 'comic'
-            keyPassword KESTORE_PASSWORD
+            keyPassword KEYSTORE_PASSWORD
             storeFile file('release.jks')
-            storePassword KESTORE_PASSWORD
+            storePassword KEYSTORE_PASSWORD
         }
         debug {
             keyAlias 'androiddebugkey'

@@ -8,7 +8,10 @@ A simple comic reader for Android
   - Offline work.
   - Material Design.
   - Optimized for phone and tablet.
-  - 
+
+**Download:**
+[Release APK ](apk/comic-release.apk)
+
 ### Screenshots
 
 <img width="45%" src="art/phone.png" />

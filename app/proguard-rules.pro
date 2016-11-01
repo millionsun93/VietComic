@@ -96,3 +96,9 @@
 -keep class sun.misc.Unsafe
 -dontwarn sun.misc.Unsafe
 -keep class com.google.gson.stream.** { *; }
+
+# AboutLibraries
+-keep class .R
+-keep class **.R$* {
+    <fields>;
+}
