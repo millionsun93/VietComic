@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_comic_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.quanlt.vietcomic.ui.detail.ComicDetailFragment">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_small"
+        android:layout_marginLeft="@dimen/comic_detail_margin_left_right"
+        android:layout_marginRight="@dimen/comic_detail_margin_left_right"
+        android:layout_marginTop="@dimen/space_small">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.quanlt.vietcomic.ui.view.ImageAspect
+                android:id="@+id/iv_comic_thumbnail"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:transitionName="@string/thumbnail"
+                tools:src="@color/colorPrimary" />
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/iv_comic_thumbnail"
+                android:layout_toRightOf="@+id/iv_comic_thumbnail"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:transitionName="@string/title"
+                tools:text="The amazing" />
+
+            <TextView
+                android:id="@+id/tv_update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_viewer_count"
+                android:layout_alignStart="@+id/tv_viewer_count"
+                android:layout_below="@+id/tv_viewer_count"
+                android:layout_marginTop="@dimen/space_small"
+                android:drawableLeft="@drawable/ic_access_time_red_500_24dp"
+                android:gravity="center_vertical"
+                tools:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_viewer_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_title"
+                android:layout_alignStart="@+id/tv_title"
+                android:layout_below="@+id/tv_title"
+                android:layout_marginTop="@dimen/space_small"
+                android:drawableLeft="@drawable/ic_streetview_red_500_24dp"
+                android:gravity="center_vertical"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/tv_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_update_time"
+                android:layout_alignStart="@+id/tv_update_time"
+                android:layout_below="@+id/tv_update_time"
+                android:layout_marginTop="@dimen/space_small"
+                android:drawableLeft="@drawable/ic_library_books_red_500_24dp"
+                android:gravity="center_vertical"
+                android:text="@string/categories" />
+
+            <me.gujun.android.taggroup.TagGroup
+                android:id="@+id/tg_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_categories"
+                android:layout_alignStart="@+id/tv_categories"
+                android:layout_below="@+id/tv_categories"
+                android:layout_marginTop="@dimen/space_small" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tg_categories"
+                android:layout_alignStart="@+id/tg_categories"
+                android:layout_below="@+id/tg_categories"
+                android:layout_marginTop="@dimen/space_small"
+                android:drawableLeft="@drawable/ic_face_red_500_24dp"
+                android:gravity="center_vertical"
+                android:text="@string/author" />
+
+            <me.gujun.android.taggroup.TagGroup
+                android:id="@+id/tg_author"
+                style="@style/TagGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_author"
+                android:layout_alignStart="@+id/tv_author"
+                android:layout_below="@+id/tv_author"
+                android:layout_marginBottom="@dimen/space_small"
+                android:layout_marginTop="@dimen/space_small" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_small"
+        android:layout_marginLeft="@dimen/comic_detail_margin_left_right"
+        android:layout_marginRight="@dimen/comic_detail_margin_left_right"
+        android:layout_marginTop="@dimen/space_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Gumball, Darwin và tất tần tật những người bạn đáng yêu đã đến với thế giới comic rồi đây ! Sống trong một khu phố hỗn tạp người-thú-vật lẫn lộn, mỗi một ngày dường như dài bất tật đối với Gumball và Darwin, với đủ thứ trò trên trời dưới đất và BẤT KỂ CHUYỆN GÌ CŨNG CÓ THỂ  XẢY RA ! Ai yêu thích series hoạt hình Gumball trên CartoonNetwork không thể bỏ qua comic này! Comic ưu tiên dành cho những ai vô tư hồn nhiên trong sáng và muốn quay về tuổi thơ!" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_chapters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_small"
+        android:layout_marginLeft="@dimen/comic_detail_margin_left_right"
+        android:layout_marginRight="@dimen/comic_detail_margin_left_right"
+        android:layout_marginTop="@dimen/space_small">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/chapters"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_chapters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

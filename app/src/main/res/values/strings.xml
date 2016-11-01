@@ -1,0 +1,34 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Viet Comic</string>
+    <string name="no_comic_icon">No comic icon</string>
+    <string name="no_comic">No comic</string>
+    <string name="error_update_failed">Failed to update comic</string>
+    <string name="action_search">Search for a comic</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="title_activity_comic_detail">ComicDetailActivity</string>
+    <string name="author">Author</string>
+    <string name="categories">Categories</string>
+    <string name="view_count">
+        <xliff:g example="69" id="viewers">%1$d</xliff:g>
+    </string>
+    <string name="update_on">
+        <xliff:g example="10-10-2010 16:33:33" id="updateon">%1$s</xliff:g>
+    </string>
+    <string name="page_status">
+        <xliff:g example="10" id="current_page">%1$s</xliff:g>/<xliff:g example="20" id="max_page">%2$s</xliff:g>
+    </string>
+    <string name="description">Description</string>
+    <string name="chapters">Chapters</string>
+    <string name="thumbnail">thumbnail</string>
+    <string name="title">title</string>
+    <string name="title_activity_reader">ReaderActivity</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="switch_to_next">Would you like to switch to the next chapter?</string>
+    <string name="switch_to_prev">Would you like to switch to the previous chapter</string>
+    <string name="about">About</string>
+    <string name="aboutLibraries_description_showIcon">true</string>
+    <string name="aboutLibraries_description_showVersion">true</string>
+    <string name="aboutLibraries_description_text">Simple comic reader, resources come from vietcomic.net</string>
+</resources>
